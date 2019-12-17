@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kryw's</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon"
+        href="https://static-cdn.jtvnw.net/jtv_user_pictures/esl_kryw-profile_image-32f84d973716b520-70x70.jpeg">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <style>
+        html,
+        body {
+            font-family: 'Roboto', 'Helvetica', sans-serif;
+            font-weight: 400;
+        }
+
+        html {
+            overflow-y: hidden !important;
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        body {
+            background: rgba(16, 23, 30, 0.8);
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .background {
+            background: rgba(16, 23, 30, 0.9);
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .background::before {
+            background-image: url(https://pbs.twimg.com/profile_banners/3065879490/1530815440/1500x500);
+            background-size: cover;
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+        }
+
+        .block-wrapper {
+            z-index: 1;
+        }
+
+        .block {
+            background: rgba(16, 23, 30, 0.95);
+            margin: 5px;
+            box-shadow: 0 1px 4px rgba(169, 169, 169, 0.3);
+        }
+
+        .block-label {
+            color: rgba(255, 255, 255, 0.87);
+            font-weight: 700;
+            width: 100%;
+            padding-left: 10px;
+            display: block;
+            height: 48px;
+            line-height: 48px;
+            background-color: rgba(66, 66, 72, 0.5);
+        }
+
+        a {
+            color: #FFCC4D;
+        }
+
+        .block table thead th {
+            color: rgba(255, 255, 255, 0.87);
+        }
+
+        .block table tbody td {
+            color: rgba(255, 255, 255, 0.87);
+        }
+
+        .block table tbody tr:nth-child(odd) {
+            background-color: rgba(33, 52, 72, .7);
+        }
+
+        .layout-column {
+            flex-direction: column;
+        }
+
+        .layout-row {
+            flex-direction: row;
+        }
+
+        .layout-column,
+        .layout-row {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .twitch-wrapper,
+        .twitter-wrapper {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-direction: row;
+            margin: 5px;
+            box-shadow: 0 1px 4px rgba(169, 169, 169, 0.3);
+        }
+
+        .twitch-wrapper {
+            z-index: 1;
+            margin: 0;
+            width: 620px;
+            min-height: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+            margin: 5px;
+            align-items: flex-start;
+            align-content: flex-start;
+            justify-content: space-between;
+        }
+
+        .twitter-wrapper::-webkit-scrollbar,
+        .twitter-wrapper::-webkit-scrollbar:horizontal {
+            background: transparent;
+            width: 8px;
+            height: 4px;
+        }
+
+        .twitter-wrapper::-webkit-scrollbar-thumb {
+            background: #df5a49;
+            border-radius: 2px;
+        }
+
+        .twitter-wrapper::-webkit-scrollbar-thumb:window-inactive {
+            background: rgba(59, 227, 13, .4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <section class="twitter-wrapper layout-row" style="position: relative; overflow: auto;">
+        <a class="twitter-timeline" data-tweet-limit="4" href="https://twitter.com/Kryw99"
+            data-theme="dark"
+            data-widget-id="347008916514828288">Tweets by @Kryw99</a>
+    </section>
+    <section class="block-wrapper">
+        <div class="block">
+            <label class="block-label">ADVENTURE MAPS</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 30px;"></th>
+                        <th style="width: 180px;">Campaign</th>
+                        <th style="width: 180px;">Name</th>
+                        <th style="width: 100px;">Type</th>
+                        <th>Difficulty</th>
+                        <th style="width: 130px;">Code</th>
+                        <th>Description</th>
+                        <th>Trailer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center">1</td>
+                        <td>n/a</td>
+                        <td>4 Lamas Escape</td>
+                        <td>Parkour</td>
+                        <td>Medium</td>
+                        <td><a href="https://epicgames.com/fn/3604-0468-9853" target="_blank"
+                                rel="noopener noreferrer">3604-0468-9853</a></td>
+                        <td>Find the 4 lamas on this funny parkour</td>
+                        <td>n/a</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" style="text-align: center">2</td>
+                        <td rowspan="2">Window Story 1/4</td>
+                        <td rowspan="2">Prison Riot</td>
+                        <td rowspan="2">Parkour</td>
+                        <td>Medium</td>
+                        <td><a href="https://epicgames.com/fn/3958-9852-3835" target="_blank"
+                                rel="noopener noreferrer">3958-9852-3835 (simplified)</a></td>
+                        <td rowspan="2">NokSs was jailed, try to escape from there during the riot</td>
+                        <td rowspan="2">n/a</td>
+                    </tr>
+                    <tr style="background-color: rgba(187, 17, 17, 0.7);">
+                        <td>Hardcore</td>
+                        <td><a
+                                href="https://epicgames.com/fn/9994-8069-9406" target="_blank"
+                                rel="noopener noreferrer">9994-8069-9406 (hardcore)</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">3</td>
+                        <td>Window Story 2/4</td>
+                        <td>Prefab Factory</td>
+                        <td>Adventure</td>
+                        <td>Medium</td>
+                        <td><a href="https://epicgames.com/fn/9841-3089-1905" target="_blank"
+                                rel="noopener noreferrer">9841-3089-1905</a></td>
+                        <td>Investigate & Infiltrate the big Factory who created the terrific window</td>
+                        <td><a target="_BLANK" href="https://www.youtube.com/watch?v=pz9jPjFUBqM">Link</a></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">4</td>
+                        <td>Window Story 3/4</td>
+                        <td>Frozen Hell</td>
+                        <td>Adventure</td>
+                        <td>Hardcore</td>
+                        <td><a href="https://epicgames.com/fn/6010-1474-8119" target="_blank"
+                                rel="noopener noreferrer">6010-1474-8119</a></td>
+                        <td>Find the Demonic Spirit who corrupted NokSs !</td>
+                        <td><a target="_BLANK" href="https://www.youtube.com/watch?v=yDGzkuOr8OM">Link</a></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">5</td>
+                        <td>Window Story 4/4</td>
+                        <td>Cursed Forest</td>
+                        <td>Adventure</td>
+                        <td>?</td>
+                        <td>not available</td>
+                        <td>?</td>
+                        <td>n/a</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">6</td>
+                        <td>n/a</td>
+                        <td>Hurricane : Sabotage</td>
+                        <td>Adventure</td>
+                        <td>Easy</td>
+                        <td><a href="https://epicgames.com/fn/0931-2027-9967" target="_blank"
+                                rel="noopener noreferrer">0931-2027-9967</a></td>
+                        <td>Destroy the army bots with your squad and get out !</td>
+                        <td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">7</td>
+                        <td>n/a</td>
+                        <td>Angry Chests</td>
+                        <td>mini-game</td>
+                        <td>Medium</td>
+                        <td><a href="https://epicgames.com/fn/8909-0798-8795" target="_blank"
+                                rel="noopener noreferrer">8909-0798-8795</a></td>
+                        <td>Destroy all Angry Chests and take bag the 10 Boumga Coins !</td>
+                        <td>n/a</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="block">
+            <label class="block-label">FFA MAPS</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 30px;"></th>
+                        <th style="width: 180px;">Name</th>
+                        <th style="width: 100px;">Type</th>
+                        <th style="width: 130px;">Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center">8</td>
+                        <td>GoldenEye 007 Facility</td>
+                        <td>Deathmatch</td>
+                        <td><a href="https://epicgames.com/fn/9696-9431-4874" target="_blank"
+                                rel="noopener noreferrer">9696-9431-4874</a></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">9</td>
+                        <td>Placid</td>
+                        <td>Deathmatch</td>
+                        <td><a href="https://epicgames.com/fn/7275-8242-0228" target="_blank"
+                                rel="noopener noreferrer">7275-8242-0228</a></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">10</td>
+                        <td>Artic Station</td>
+                        <td>Deathmatch</td>
+                        <td><a href="https://epicgames.com/fn/8557-8346-0505" target="_blank"
+                                rel="noopener noreferrer">8557-8346-0505</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div class="twitch-wrapper">
+        <iframe src="https://player.twitch.tv/?channel=esl_kryw" frameborder="0" scrolling="no" height="378" width="620"
+            allowfullscreen="true"></iframe>
+    </div>
+</body>
+
+<script>
+    !function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + "://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+</script>
+
+</html>
