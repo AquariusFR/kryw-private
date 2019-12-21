@@ -1,0 +1,146 @@
+@font-face { font-family: LemonMilk; src: url('./fonts/LemonMilk.otf'); } 
+@font-face { font-family: TheAbsolute; font-weight: bold; src: url('./fonts/TheAbsolute.otf');}
+
+
+html,
+body {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 400;
+}
+
+html {
+    overflow-y: hidden !important;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    background: rgba(16, 23, 30, 0.8);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.background {
+    background: rgba(16, 23, 30, 0.9);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.background::before {
+    background-image: url(https://pbs.twimg.com/profile_banners/3065879490/1530815440/1500x500);
+    background-size: cover;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.block-wrapper {
+    z-index: 1;
+}
+
+.block {
+    background: rgba(16, 23, 30, 0.95);
+    margin: 5px;
+    box-shadow: 0 1px 4px rgba(169, 169, 169, 0.3);
+}
+
+.block-label {
+    color: rgba(255, 255, 255, 0.87);
+    font-weight: 700;
+    width: 100%;
+    padding-left: 10px;
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    background-color: rgba(66, 66, 72, 0.5);
+}
+
+a {
+    color: #FFCC4D;
+}
+
+.block table thead th {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.block table tbody td {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.block table tbody tr:nth-child(odd) {
+    background-color: rgba(33, 52, 72, .7);
+}
+
+.layout-column {
+    flex-direction: column;
+}
+
+.layout-row {
+    flex-direction: row;
+}
+
+.layout-column,
+.layout-row {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.twitch-wrapper,
+.twitter-wrapper {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    box-shadow: 0 1px 4px rgba(169, 169, 169, 0.3);
+}
+
+.twitch-wrapper {
+    z-index: 1;
+    margin: 0;
+    width: 620px;
+    min-height: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    margin: 5px;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.twitter-wrapper::-webkit-scrollbar,
+.twitter-wrapper::-webkit-scrollbar:horizontal {
+    background: transparent;
+    width: 8px;
+    height: 4px;
+}
+
+.twitter-wrapper::-webkit-scrollbar-thumb {
+    background: #df5a49;
+    border-radius: 2px;
+}
+
+.twitter-wrapper::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(59, 227, 13, .4);
+}
