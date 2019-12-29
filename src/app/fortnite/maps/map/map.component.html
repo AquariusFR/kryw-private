@@ -3,5 +3,13 @@
     [attr.width]="width+'px'" [attr.height]="height+'px'" viewBox="0 0  500 300"
     style="z-index: 1;">
     <svg:polygon [attr.points]="points" style="fill:lime;stroke:purple;stroke-width:5"></svg:polygon>
-    <svg:text [attr.x]="titleX" [attr.y]="titleY" fill="red" [attr.transform]="titleAngle" font-family="LemonMilk" font-size="55">{{title}}</svg:text>
+    <svg:text [attr.x]="titleX" [attr.y]="titleY" fill="red" [attr.transform]="titleAngle" font-family="LemonMilk" font-size="2.1vw">{{title}}</svg:text>
+
+    <defs>
+        <pattern id="p2" height="1" patternUnits="userSpaceOnUse" [attr.width]="width" [attr.height]="height">
+            <image xlink:href="./assets/images/fortnite-image-placeholder.jpg" x="0" y="0" [attr.width]="imageWidth" [attr.height]="imageHeight" />
+        </pattern>
+    </defs>
+            
+    <svg:polygon [attr.points]="imagePoints" fill="url(#p2)"></svg:polygon>
 </svg>
