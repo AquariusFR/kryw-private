@@ -1,0 +1,34 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="100%" height="100%"
+    viewBox="0 0 1920 1080"
+    preserveAspectRatio="none"
+    style="z-index: 1;">
+	<image href="./assets/images/kryw_logo.jpeg" x="0" y="0" height="150px" width="150px"/>
+    <svg:polygon id="first-line" style="fill: #e2a202;"></svg:polygon>
+    <svg:polygon id="second-line" style="fill: #ecb31e;"></svg:polygon>
+<!--   <animate
+    xlink:href="#first-line"
+    attributeName="fill-opacity"
+    begin="1s"
+    values="0; 1; 0"
+    keyTimes="0; 0.5; 1"
+    dur="1s"
+    fill="freeze"
+    repeatCount="indefinite"/> -->
+    <animate 
+    xlink:href="#first-line"
+    attributeName="points" dur="10000ms"
+    values="400 0, 700 0, 250 1080, 50 1080; 350 0, 750 0, 200 1080, 100 1080; 400 0, 700 0, 250 1080, 50 1080"
+    keyTimes="0; 0.5; 1"
+    repeatCount="indefinite"/>
+    <animate 
+    xlink:href="#second-line"
+    attributeName="points" dur="10000ms"
+    values="
+        699 0, 1920 0, 1920 1080, 250 1080;
+        749 0, 1920 0, 1920 1080, 200 1080;
+        699 0, 1920 0, 1920 1080, 250 1080"
+    keyTimes="0; 0.5; 1"
+    repeatCount="indefinite"/>
+</svg>

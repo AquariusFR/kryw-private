@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FortniteMapComponent } from './fortnite/maps/map/map.component';
 import { FortniteMapsComponent } from './fortnite/maps/maps.component';
+import { BackgroundComponent } from './background/background.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FortniteMapsComponent,
-    FortniteMapComponent
+    FortniteMapComponent,
+    BackgroundComponent
   ],
   imports: [
     BrowserModule,
